@@ -1,0 +1,62 @@
+body {
+    background-image: linear-gradient(120deg, #f5d64c, #e94b1f);
+    color: white;
+    font-family: "Trebuchet MS", sans-serif; 
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px; 
+}
+h3 {
+    font-size : 22px;
+	color : black;
+}
+.content input {
+    height : 30px;
+    font-size : 12px; 
+	border-radius : 5px;
+}
+.decoration {
+	padding-left : 20px;
+	padding-right : 20px;
+    background-color : blue; 
+}
+.list {
+    padding-top : 33px;
+	color : black;
+}
+.click {
+    padding-left : 11px;
+	padding-right : 11px;
+	background-color : yellow;
+}
+#tick-mark {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+#tick-mark::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 3px;
+    background-color: #336699;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+#tick-mark::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #336699;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}

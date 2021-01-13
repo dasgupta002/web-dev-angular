@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>To Do List Web App</title>
+<link type = "text/css" rel = "stylesheet" href = "mysheet.css"></link>
+<script type = "text/javascript" 
+        src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.js"></script>
+<script type = "text/javascript" src = "myscript.js"></script>
+</head>
+<body>
+<div class = "content">
+<h3>Hey! Let's list our to do's!</h3>
+</div>
+<div ng-app = "todoApp" class = "content">
+<div ng-controller = "todoController">
+<input type = "text" ng-model = "todoTask">
+<input type = "button" value = "Add" ng-click = "sendtoList()" class = "decoration">
+<br>
+<table>
+<tr ng-repeat = "task in todoList track by $index">
+<td class = "list">
+<div id="tick-mark"></div>
+&nbsp; {{ task }} &nbsp; &nbsp; &nbsp;
+</td>
+<td class = "list"><input type = "button" value = "Delete" ng-click = "deleteTask()" class = "click"></td>
+<td class = "list"><input type = "button" value = "Edit" ng-click = "editTask()" class = "click"></td>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>		
