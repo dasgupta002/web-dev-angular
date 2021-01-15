@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Weather App</title>
+<script type = "text/javascript"
+        src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.js"></script>
+<link type = "text/css" rel = "stylesheet" href = "mystyles.css">
+<script type ="text/javascript" src ="myscripts.js"></script>
+</head>
+<body>
+<div ng-app = "weatherApp" ng-controller = "WeatherController" id="dataBoard">
+<div id="dataBox">
+<div id="mainInfo" style="width: 40%; float:left">
+<p><h1><strong>{{ city }}</strong></h1></p>
+<p><h1> {{ temp }} &nbsp; <strong>&#8451;</strong></h1></p>
+<p> {{ code }}</p>
+</div>
+<div id="secoInfo" style="width: 50%; float:right">
+<img ng-src="{{ myVar }}">
+<p>Wind-Speed &nbsp; : &nbsp; {{ wind  }} &nbsp; km/h</p>
+<p>Humidity &nbsp; : &nbsp; {{ hum }} &nbsp; %</p>
+</div>
+</div>
+<div id="searchBox">
+<input ng-model = "number" style="width: 60%; float:left" input type="text" ng-value="message"/>			
+<button ng-click = "square()" style="width: 35%; float:right">Find City</button>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One';
+body { 
+    background-image: url('weather-background.jpg');
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Fjalla One', sans-serif;
+	padding-top: 200px;
+}
+#dataBoard {
+    border-left: 9px solid #F09020;
+	padding-left: 5px;
+	padding-top: 5px;
+	margin: auto;
+	background-color: rgba(225, 225, 225, 0.8);
+	display: block;
+	border-radius: 15px;
+	height: 80%;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 700px;
+	max-height: 300px;
+}
+#dataBox {
+    overflow: hidden;
+}
+#searchBox {
+	display: block;
+	background-color: white;
+	min-height: 50px;
+	width: 90%;
+    overflow: hidden;
+    height: 50px;
+    padding-left:20px;
+}
+button {
+    color: white;
+    display: block;
+    background: black;
+    border: 2px solid white;
+    float: right;
+    width: 30%;
+    min-height: 50px;
+	max-width: 200px;
+}
+button:hover {
+    opacity: 0.5;
+    color:#F09020;
+    border-color:#F09020;
+}
+input {
+    display: block;
+    float: left;
+    background: transparent;
+    border-style: none;
+    min-height: 50px;
+    width: 60px;  
+}
+#mainInfo {
+    background-color: #C9C9C9;
+    padding: 10px;
+    text-align: right;
+}
+#secoInfo {
+    padding: 10px;
+    text-align: left;
+}
+img {  
+    border-style: none;
+}
